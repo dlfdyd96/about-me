@@ -14,8 +14,9 @@
 
 ## # Home
 
-- [ ] 내 닉네임
+- [x] 내 닉네임 그런거 없소용
 - [ ] 반갑습니다 & 일본어 & 영어
+  - [vue+tailwind Carousel](https://dev.to/raulsposito/vue-simple-slider-with-tailwind-1g1d)
 - [ ] 날짜, 시간
 
 ## # About Me
