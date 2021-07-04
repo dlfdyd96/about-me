@@ -13,7 +13,7 @@
         ease-in-out
         duration-1000
         transform
-        translate-x-0
+        scale-100
         slide
       "
     >
@@ -32,7 +32,7 @@
         ease-in-out
         duration-1000
         transform
-        translate-x-full
+        scale-0
         slide
       "
     >
@@ -51,7 +51,7 @@
         ease-in-out
         duration-1000
         transform
-        translate-x-full
+        scale-0
         slide
       "
     >
@@ -71,22 +71,22 @@ export default defineComponent({
   name: "Carousel",
   methods: {
     nextSlide() {
-      let activeSlide = document.querySelector(".slide.translate-x-0");
-      activeSlide?.classList.remove("translate-x-0");
-      activeSlide?.classList.add("-translate-x-full");
+      let activeSlide = document.querySelector(".slide.scale-100");
+      activeSlide?.classList.remove("scale-100");
+      activeSlide?.classList.add("scale-0");
 
       let nextSlide = activeSlide?.nextElementSibling;
-      nextSlide?.classList.remove("translate-x-full");
-      nextSlide?.classList.add("translate-x-0");
+      nextSlide?.classList.remove("scale-0");
+      nextSlide?.classList.add("scale-100");
     },
     previousSlide() {
-      let activeSlide = document.querySelector(".slide.translate-x-0");
-      activeSlide?.classList.remove("translate-x-0");
-      activeSlide?.classList.add("translate-x-full");
+      let activeSlide = document.querySelector(".slide.scale-100");
+      activeSlide?.classList.remove("scale-100");
+      activeSlide?.classList.add("scale-0");
 
       let previousSlide = activeSlide?.previousElementSibling;
-      previousSlide?.classList.remove("-translate-x-full");
-      previousSlide?.classList.add("translate-x-0");
+      previousSlide?.classList.remove("scale-0");
+      previousSlide?.classList.add("scale-100");
     },
   },
 });
