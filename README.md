@@ -16,7 +16,7 @@
 
 - [x] 내 닉네임 그런거 없소용
 - [ ] 반갑습니다 & 일본어 & 영어
-  - [vue+tailwind Carousel](https://dev.to/raulsposito/vue-simple-slider-with-tailwind-1g1d)
+  - [tailwind Carousel](https://devdojo.com/tnylea/creating-a-slider-with-tailwind-css)
 - [ ] 날짜, 시간
 
 ## # About Me

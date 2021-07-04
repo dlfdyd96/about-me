@@ -15,6 +15,7 @@
       "
       data-replace='{ "translate-y-12": "translate-y-0", "opacity-0":"opacity-100"}'
     >
+      <Carousel />
       {{ msg }}
     </div>
   </div>
@@ -22,9 +23,13 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Carousel from "./Carousel.vue";
 
 export default defineComponent({
   name: "HelloWorld",
+  components: {
+    Carousel,
+  },
   props: {
     myName: String,
     msg: String,
