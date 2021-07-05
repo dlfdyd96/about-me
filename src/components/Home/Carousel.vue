@@ -65,6 +65,15 @@
 </template>
 
 <script lang="ts">
+/**
+ * 1. setup() composition api로 수정
+ * 2. const slides = [ { animationProps: String, text: String } ]
+ * 3. div v-for="(slide, index) in slides" v-bind:key="index"
+ * 4. nextSlide(), previousSlide() 수정
+ *  4-1. const currentSlideIdx = ref(0);
+ *  4-2-1. nextSlide() { if (currentSlideIdx == slides.length) currentSlideIdx = 0; }
+ *  4-2-2. previousSlide() { if (currentSlideIdx == 0) currentSlideIdx = slides.length; }
+ */
 import { defineComponent } from "vue";
 
 export default defineComponent({
