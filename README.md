@@ -15,7 +15,7 @@
 ## # Home
 
 - [x] 내 닉네임 그런거 없소용
-- [ ] 반갑습니다 & 일본어 & 영어
+- [x] 반갑습니다 & 일본어 & 영어
   - [tailwind Carousel](https://devdojo.com/tnylea/creating-a-slider-with-tailwind-css)
 - [ ] 날짜, 시간
 
