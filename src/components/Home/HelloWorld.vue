@@ -1,5 +1,5 @@
 <template>
-  <div class="m-auto p-6">
+  <div class="m-auto pb-12">
     <div class="font-mono text-5xl mb-5">
       I'm <span class="text-7xl">{{ myName }}</span>
       .
@@ -16,7 +16,6 @@
       data-replace='{ "translate-y-12": "translate-y-0", "opacity-0":"opacity-100"}'
     >
       <Carousel />
-      {{ msg }}
     </div>
   </div>
 </template>

@@ -1,66 +1,25 @@
 <template>
   <div class="relative">
     <div
+      v-for="(slide, index) in slides"
+      :key="index"
       class="
         absolute
         w-full
-        bg-red-300
         flex
         items-center
         justify-center
-        text-5xl
+        text-3xl
         transition-all
         ease-in-out
         duration-1000
         transform
-        scale-100
         slide
       "
+      :class="slide.animationProps"
     >
-      안녕하세요1
+      {{ slide.text }}
     </div>
-    <div
-      class="
-        absolute
-        w-full
-        bg-yellow-300
-        flex
-        items-center
-        justify-center
-        text-5xl
-        transition-all
-        ease-in-out
-        duration-1000
-        transform
-        scale-0
-        slide
-      "
-    >
-      안녕하세요2
-    </div>
-    <div
-      class="
-        absolute
-        w-full
-        bg-blue-300
-        flex
-        items-center
-        justify-center
-        text-5xl
-        transition-all
-        ease-in-out
-        duration-1000
-        transform
-        scale-0
-        slide
-      "
-    >
-      안녕하세요3
-    </div>
-  </div>
-  <div class="py-10">
-    <button @click="nextSlide">gd</button>
-    <button @click="previousSlide">gd</button>
   </div>
 </template>
 
@@ -74,29 +33,59 @@
  *  4-2-1. nextSlide() { if (currentSlideIdx == slides.length) currentSlideIdx = 0; }
  *  4-2-2. previousSlide() { if (currentSlideIdx == 0) currentSlideIdx = slides.length; }
  */
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
+
+interface SlideI {
+  text: string;
+  animationProps: string;
+}
 
 export default defineComponent({
   name: "Carousel",
-  methods: {
-    nextSlide() {
-      let activeSlide = document.querySelector(".slide.scale-100");
-      activeSlide?.classList.remove("scale-100");
-      activeSlide?.classList.add("scale-0");
+  setup() {
+    const currentSlideIdx = ref(0);
+    const slides = ref<SlideI[]>([
+      {
+        text: "헬로 월드! 제 포트폴리오 사이트에 오신 것을 환영합니다.",
+        animationProps: "scale-100 opacity-100",
+      },
+      {
+        text: "Hello World! Welcome to my Portfolio site.",
+        animationProps: "scale-0 opacity-0",
+      },
+      {
+        text: "ハローワールド！ 私のポートフォリオサイトへようこそ。",
+        animationProps: "scale-0 opacity-0",
+      },
+    ]);
 
-      let nextSlide = activeSlide?.nextElementSibling;
-      nextSlide?.classList.remove("scale-0");
-      nextSlide?.classList.add("scale-100");
-    },
-    previousSlide() {
-      let activeSlide = document.querySelector(".slide.scale-100");
-      activeSlide?.classList.remove("scale-100");
-      activeSlide?.classList.add("scale-0");
+    const nextSlide = () => {
+      const length = slides.value.length;
+      const curIdx = currentSlideIdx.value;
+      const nextIdx = (curIdx + 1) % length;
 
-      let previousSlide = activeSlide?.previousElementSibling;
-      previousSlide?.classList.remove("scale-0");
-      previousSlide?.classList.add("scale-100");
-    },
+      slides.value[curIdx].animationProps = "scale-0 opacity-0";
+      slides.value[nextIdx].animationProps = "scale-100 opacity-100";
+
+      currentSlideIdx.value = nextIdx;
+    };
+
+    const previousSlide = () => {
+      const length = slides.value.length;
+      const curIdx = currentSlideIdx.value;
+      const prevIdx = (length + curIdx - 1) % length;
+
+      slides.value[curIdx].animationProps = "scale-0 opacity-0";
+      slides.value[prevIdx].animationProps = "scale-100 opacity-100";
+
+      currentSlideIdx.value = prevIdx;
+    };
+
+    setInterval(() => {
+      nextSlide();
+    }, 3000);
+
+    return { currentSlideIdx, slides, nextSlide, previousSlide };
   },
 });
 </script>
