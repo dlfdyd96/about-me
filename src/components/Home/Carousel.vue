@@ -83,7 +83,7 @@ export default defineComponent({
 
     setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 2000);
 
     return { currentSlideIdx, slides, nextSlide, previousSlide };
   },

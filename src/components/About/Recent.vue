@@ -1,5 +1,5 @@
 <template>
-  <div>Recent News</div>
+  <div class="text-2xl font-black">Recent News</div>
 </template>
 
 <script lang="ts">

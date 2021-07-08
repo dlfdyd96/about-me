@@ -1,16 +1,22 @@
 <template>
   <div class="m-10">
-    <div class="text-4xl">예 그렇게 됐습니다.</div>
+    <div class="text-4xl font-black">
+      About <span class="text-green-500">Me</span>
+    </div>
     <div>
-      <div class="grid grid-cols-1 sm:grid-cols-2">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4">
         <Intro />
-        <WhatIDo />
         <Detail />
-        <Recent />
         <!-- 자기소개 & 영어로 -->
         <!-- 나이, 지역, 주소, 이메일, 폰, 현재 직업 -->
         <!-- What I Do -->
         <!-- Recent News -->
+      </div>
+      <div class="grid grid-cols-1 p-4">
+        <WhatIDo />
+      </div>
+      <div class="grid grid-cols-1 p-4">
+        <Recent />
       </div>
     </div>
   </div>
