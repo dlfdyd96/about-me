@@ -29,7 +29,7 @@ export default defineComponent({
       {
         icon: `fas fa-server`,
         title: `Back-End Development`,
-        content: `저는 주로 백엔드 개발을 하고 있습니다. NodeJS와 NestJS 프레임워크를 주로 사용하여 API Server를 개발하고 있습니다. 그 밖에도 Database로는 Redis, MongoDB와 MySQL을 사용하며 Docker를 사용하여 애플리케이션들을 관리합니다.`,
+        content: `저는 주로 NodeJS와 NestJS 프레임워크를 주로 사용하여 API Server를 개발하고 있습니다. 그 밖에도 Database로는 Redis, MongoDB와 MySQL을 사용하며 Docker를 사용하여 애플리케이션들을 관리합니다.`,
       },
       {
         icon: `fas fa-globe-asia`,

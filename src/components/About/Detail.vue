@@ -18,7 +18,7 @@
 import { defineComponent, ref } from "vue";
 
 interface InforI {
-  age: number;
+  birth: string;
   residence: string;
   address: string;
   e_mail: string;
@@ -29,7 +29,8 @@ export default defineComponent({
   name: "Detail",
   setup() {
     const myInfo = ref<InforI>({
-      age: new Date().getFullYear() - new Date("1996").getFullYear() + 1,
+      // age: new Date().getFullYear() - new Date("1996").getFullYear() + 1,
+      birth: "Oct 18th, 1996",
       residence: `Republic of Korea`,
       address: `Solbat-ro, Gwanak-gu, Seoul`,
       e_mail: `1yongs_@naver.com`,
