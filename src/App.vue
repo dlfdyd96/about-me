@@ -4,7 +4,19 @@
     <router-link to="/about">About</router-link>
   </div> -->
   <router-view />
+  <FAB />
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import FAB from "@/components/utils/FAB.vue";
+
+export default defineComponent({
+  components: {
+    FAB,
+  },
+});
+</script>
 
 <style>
 #app {

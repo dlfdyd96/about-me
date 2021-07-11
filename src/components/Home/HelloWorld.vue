@@ -1,7 +1,7 @@
 <template>
   <div class="m-auto pb-12">
     <div class="font-mono text-5xl mb-5">
-      I'm <span class="text-7xl">{{ myName }}</span>
+      I'm <span class="text-7xl sm:text-1xl">{{ myName }}</span>
       .
     </div>
     <div
