@@ -1,5 +1,5 @@
 <template>
-  <div class="text-xl">
+  <div class="text-base sm:text-xl">
     <div v-for="(value, key) in myInfo" :key="key" class="mb-2">
       <span class="capitalize mr-4 font-black text-green-500">{{ key }}</span>
       <a

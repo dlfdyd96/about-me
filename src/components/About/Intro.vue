@@ -1,5 +1,5 @@
 <template>
-  <div class="text-xl font-medium">
+  <div class="text-base sm:text-xl font-medium">
     <p>안녕하세요 👋🏻</p>
     <p>
       웹 제작이 재밌어서 시작했던 일이 어느새 웹 풀스택 개발자가 목표가

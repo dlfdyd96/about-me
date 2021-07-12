@@ -9,7 +9,8 @@
         flex
         items-center
         justify-center
-        text-3xl
+        text-sm
+        md:text-3xl
         transition-all
         ease-in-out
         duration-1000
@@ -46,7 +47,7 @@ export default defineComponent({
     const currentSlideIdx = ref(0);
     const slides = ref<SlideI[]>([
       {
-        text: "헬로 월드! 제 포트폴리오 사이트에 오신 것을 환영합니다.",
+        text: "반가워요! 제 포트폴리오 사이트에 오신 것을 환영합니다.",
         animationProps: "scale-100 opacity-100",
       },
       {

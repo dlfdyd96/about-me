@@ -1,14 +1,21 @@
 <template>
-  <div class="text-3xl font-black pb-4">
+  <div class="text-2xl sm:text-3xl font-black pb-4">
     What <span class="text-green-500">I Do</span>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
     <div v-for="(item, index) in items" :key="index">
       <span
-        ><i class="text-5xl text-green-400 p-2" :class="item.icon"></i
+        ><i
+          class="text-4xl sm:text-5xl text-green-400 p-2"
+          :class="item.icon"
+        ></i
       ></span>
-      <div class="text-xl font-black text-green-500">{{ item.title }}</div>
-      <div class="font-extrabold text-gray-500">{{ item.content }}</div>
+      <div class="text-lg sm:text-xl font-black text-green-500">
+        {{ item.title }}
+      </div>
+      <div class="text-sm sm:text-base font-extrabold text-gray-500">
+        {{ item.content }}
+      </div>
     </div>
   </div>
 </template>

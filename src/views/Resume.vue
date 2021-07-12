@@ -1,9 +1,12 @@
 <template>
-  <div class="m-10">
+  <div class="my-5 mx-2 sm:m-10">
     <div class="text-4xl font-black px-4 pb-4">Resume</div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4">
-      <Education :title="'Education'" class="col-span-2 sm:col-span-1" />
-      <DevelopSkills :title="'DevelopSkills'" />
+      <Education :title="'Education'" class="col-span-2 sm:col-span-2" />
+      <DevelopSkills
+        :title="'DevelopSkills'"
+        class="col-span-2 sm:col-span-1"
+      />
       <Knowledges :title="'Knowledges'" />
       <Experience :title="'Experience'" />
 
