@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="text-2xl font-black">{{ title }}</div>
-    <div class="pt-2">
+    <div class="pt-2 flex flex-wrap">
       <div
         v-for="(item, index) in items"
         :key="index"
-        class="inline bg-green-400 p-1 px-2 m-1 text-white rounded-md"
+        class="bg-green-400 p-1 px-2 m-1 text-white rounded-md"
       >
         {{ item }}
       </div>
