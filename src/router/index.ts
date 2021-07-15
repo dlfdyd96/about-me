@@ -3,7 +3,7 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Resume from "../views/Resume.vue";
 import Portfolio from "../views/Portfolio.vue";
-import Contact from "../views/Contact.vue";
+// import Contact from "../views/Contact.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,11 +30,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "Portfolio",
     component: Portfolio,
   },
-  {
-    path: "/contact",
-    name: "Contact",
-    component: Contact,
-  },
+  // {
+  //   path: "/contact",
+  //   name: "Contact",
+  //   component: Contact,
+  // },
 ];
 
 const router = createRouter({
