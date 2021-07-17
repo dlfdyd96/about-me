@@ -3,7 +3,8 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Resume from "../views/Resume.vue";
 import Portfolio from "../views/Portfolio.vue";
-import PortfolioDetail from "../views/PortfolioDetail.vue";
+import PortfolioDetail from "../components/Portfolio/PortfolioDetail.vue";
+import PortfolioHome from "../components/Portfolio/PortfolioHome.vue";
 // import Contact from "../views/Contact.vue";
 
 const routes: Array<RouteRecordRaw> = [
@@ -37,17 +38,28 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/portfolio",
-    name: "Portfolio",
     component: Portfolio,
-    meta: {
-      isPage: true,
-    },
+    children: [
+      {
+        path: "",
+        name: "Portfolio",
+        component: PortfolioHome,
+        meta: {
+          isPage: true,
+        },
+      },
+      {
+        path: ":id",
+        name: "PortFolioDetail",
+        component: PortfolioDetail,
+      },
+    ],
   },
-  {
-    path: "/portfolio-detail/:id",
-    name: "PortFolioDetail",
-    component: PortfolioDetail,
-  },
+  // {
+  //   path: "/portfolio-detail/:id",
+  //   name: "PortFolioDetail",
+  //   component: PortfolioDetail,
+  // },
   // {
   //   path: "/contact",
   //   name: "Contact",

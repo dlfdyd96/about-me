@@ -23,7 +23,7 @@ export default defineComponent({
     const routesInfo = router.getRoutes().filter((item) => item.meta.isPage);
     // const currentPage = ref(0);
 
-    // console.log(routesInfo);
+    console.log(routesInfo);
 
     const nextPage = () => {
       const index = routesInfo.findIndex(
