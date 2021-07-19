@@ -16,7 +16,7 @@
     </div>
     <div class="flex justify-center">
       <img
-        class="object-cover w-full max-w-screen-sm max-h-60 pb-10"
+        class="object-cover object-center w-full max-w-screen-sm max-h-60 pb-10"
         ref="pic"
         :src="require(`@/assets/portfolio/${currentItem.image}`)"
         :style="{ filter: `brightness(80%)` }"
