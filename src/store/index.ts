@@ -15,7 +15,8 @@ export default createStore<RootState>({
       {
         title: "임베디드 소프트웨어 경진대회",
         image: "test1.jpeg",
-        contents: "안녕하세요<p>다음줄입니다.",
+        contents:
+          "안녕하세요<p>다음줄입니다.<p>fdajskfdsahjklfshadjkfshdakjfhsdjkalfdshajlkfshajkdlfsadhlkjfdsahljkfadshjklfdsahjklfdashjklfdashkjhfkjdsalhjkldfsahjkldfsahjkl",
       },
       {
         title: "대경권 알고리즘 경진 경진대회",
@@ -44,7 +45,12 @@ export default createStore<RootState>({
       },
     ],
   },
-  mutations: {},
+  mutations: {
+    findPortfolioById(state: RootState, index: number) {
+      // console.log(state.portFolioItems[index]);
+      return state.portFolioItems[index];
+    },
+  },
   actions: {},
   modules: {},
 });
