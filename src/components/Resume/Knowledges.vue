@@ -27,11 +27,15 @@ export default defineComponent({
     const items = ref<string[]>([
       "Node.js",
       "NestJS",
-      "express",
+      "TypeScript",
       "MongoDB",
       "MySQL",
+      "Redis",
       "RESTfulAPI",
       "Vue.js",
+      "Azure",
+      "Docker",
+      "Kubernetes",
     ]);
 
     return { items };
