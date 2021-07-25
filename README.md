@@ -17,13 +17,13 @@
 - [x] 내 닉네임 그런거 없소용
 - [x] 반갑습니다 & 일본어 & 영어
   - [tailwind Carousel](https://devdojo.com/tnylea/creating-a-slider-with-tailwind-css)
-- [ ] 날짜, 시간
+- [x] 날짜, 시간
 
 ## # About Me
 
-- [ ] 간략한 자기소개 & 영어로도
-- [ ] 나이, 지역, 주소, 이메일, 폰?, 현재 직업
-- [ ] What I Do
+- [x] 간략한 자기소개 & 영어로도
+- [x] 나이, 지역, 주소, 이메일, 폰?, 현재 직업
+- [x] What I Do
   - Server Developer
   - Front End Developer
   - Azure Infra
@@ -32,21 +32,21 @@
 
 ## # Resume
 
-- [ ] Education
-  - [ ] Time Line
-- [ ] Develop Skills
-- [ ] Coding Skills
-- [ ] Experience
-- [ ] Knowledges
+- [x] Education
+  - [x] Time Line
+- [x] Develop Skills
+- [x] Experience
+- [x] Knowledges
   - skill stack (badge)
-  - Awards
+- [ ] Project
 
 ## # Portfolio
 
-- [ ] Weedle Academy
+- [x] Weedle Academy
 - [ ] NestJS Community
 - [ ] ...
 
 ## # Contact
 
 - [ ] email
+- diplicated
