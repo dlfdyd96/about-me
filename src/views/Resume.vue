@@ -10,7 +10,7 @@
       <Education :title="'Education'" class="col-span-2" />
       <Experience :title="'Experience'" class="col-span-2" />
 
-      <Awards :title="'Awards'" class="col-span-2" />
+      <Awards :title="'Awards / Certificate'" class="col-span-2" />
     </div>
   </div>
 </template>
