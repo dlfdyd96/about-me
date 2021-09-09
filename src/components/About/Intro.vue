@@ -1,10 +1,11 @@
 <template>
-  <div class="text-base sm:text-xl font-medium">
+  <div class="text-base sm:text-lg font-medium">
     <p>안녕하세요 👋🏻</p>
     <p>
       웹 제작이 재밌어서 시작했던 일이 어느새 웹 풀스택 개발자가 목표가
       되었습니다.
     </p>
+    <br />
     <p>
       웹의 다양한 기능과 사용성 또한 계속 발전하는 기술스택들이 저에게 의욕과
       즐거움을 줬습니다.
