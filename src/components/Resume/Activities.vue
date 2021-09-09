@@ -79,19 +79,19 @@ export default defineComponent({
           title: `AZ-900: Microsoft Azure Fundamentals`,
           date: `2021-05-26`,
           contents: [
-            "Microsoft",
             "Cloud 기본 컨셉과 Mirosoft의 Public Cloud인 Azure 서비스들에 대한 이해도 평가 시험",
+            "주관: Microsoft",
           ],
         },
         {
           title: `리눅스 마스터: 2급`,
           date: `2018-12-21`,
-          contents: ["한국정보통신진흥협회"],
+          contents: ["주관: 한국정보통신진흥협회"],
         },
         {
           title: `TOEIC Speaking: Level 5`,
           date: `2020-05-16`,
-          contents: ["한국TOEIC위원회"],
+          contents: ["주관: 한국TOEIC위원회"],
         },
       ],
     });
