@@ -10,6 +10,7 @@
       <Experience :title="'Experience'" class="col-span-1" />
 
       <!-- Education -->
+      <Education :title="'Education'" class="col-span-1" />
 
       <!-- <DevelopSkills
         :title="'DevelopSkills'"
@@ -30,13 +31,13 @@ import Intro from "@/components/Resume/Intro.vue";
 import Detail from "@/components/Resume/Detail.vue";
 // import Awards from "@/components/Resume/Awards.vue";
 // import DevelopSkills from "@/components/Resume/DevelopSkills.vue";
-// import Education from "@/components/Resume/Education.vue";
+import Education from "@/components/Resume/Education.vue";
 import Experience from "@/components/Resume/Experience.vue";
 // import Knowledges from "@/components/Resume/Knowledges.vue";
 
 export default defineComponent({
   name: "Resume",
-  components: { Intro, Detail, Experience },
+  components: { Intro, Detail, Experience, Education },
   // components: { Awards, DevelopSkills, Education, Experience, Knowledges },
 });
 </script>
