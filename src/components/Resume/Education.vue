@@ -19,9 +19,7 @@
           v-for="(content, contentsIndex) in item.contents"
           :key="contentsIndex"
         >
-          <div class="ml-4 text-base sm:text-lg font-medium">
-            - {{ content }}
-          </div>
+          <div class="ml-4">- {{ content }}</div>
         </div>
       </div>
     </div>
@@ -48,14 +46,6 @@ export default defineComponent({
   setup() {
     const items = ref<EducationItemI[]>([
       {
-        title: `Programmers Dev Course : 클라우드 기반 백엔드 엔지니어링`,
-        date: `2015-07-30 ~ 교육 참여 중`,
-        contents: [
-          "Java Spring Framework, Cloud (AWS) 교육",
-          "코드 리뷰, TIL 블로그 포스팅, 기술 세미나 발표 등 참여",
-        ],
-      },
-      {
         title: `금오공과대학교`,
         date: `2015-03-02 ~ 2021-02-19`,
         contents: [
@@ -65,11 +55,11 @@ export default defineComponent({
           "축구 동아리 Cost 부원 (2018-03 ~ 2021-02)",
         ],
       },
-      {
-        title: `영남고등학교`,
-        date: `2012-03 ~ 2015-02`,
-        contents: [],
-      },
+      // {
+      //   title: `영남고등학교`,
+      //   date: `2012-03 ~ 2015-02`,
+      //   contents: [],
+      // },
     ]);
 
     return { items };
