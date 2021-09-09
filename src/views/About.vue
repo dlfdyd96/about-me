@@ -4,7 +4,7 @@
       About <span class="text-green-500">Me</span>
     </div>
     <div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4">
+      <div class="grid grid-cols-1 gap-6 p-4">
         <Intro />
         <Detail />
         <!-- 자기소개 & 영어로 -->
