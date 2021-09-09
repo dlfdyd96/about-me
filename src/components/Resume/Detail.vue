@@ -1,9 +1,9 @@
 <template>
-  <div class="text-base md:text-lg lg:text-xl">
+  <div class="text-sm sm:text-base md:text-lg lg:text-xl">
     <div class="grid grid-cols-1 lg:grid-cols-2 py-4">
       <div class="mb-2" v-for="(value, key) in myInfo" :key="key">
-        <div class="grid grid-cols-3">
-          <div class="col-span-1">
+        <div class="grid grid-cols-5">
+          <div class="col-span-2">
             <!-- icon -->
             <span
               ><i
@@ -16,7 +16,7 @@
               value.title
             }}</span>
           </div>
-          <div class="col-span-2">
+          <div class="col-span-3">
             <!-- description -->
             <a
               class="font-medium underline"

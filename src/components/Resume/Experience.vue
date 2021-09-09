@@ -12,6 +12,7 @@
         </div>
         <div class="text-lg sm:text-xl font-bold mb-2">
           {{ item.office }}
+          <br class="sm:hidden" />
           <span class="text-base sm:text-lg font-medium text-gray-500"
             >({{ item.date }})</span
           >
@@ -30,6 +31,7 @@
         >
           <div class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">
             {{ contentsIndex + 1 }}. {{ contentItem.title }}
+            <br class="sm:hidden" />
             <span class="ml-2 text-base sm:text-lg font-medium text-gray-500"
               >({{ contentItem.date }})</span
             >
@@ -109,7 +111,7 @@ export default defineComponent({
         title: `Software Engineer - BackEnd Developer`,
         description: `헬스앤메디슨은 반려동물의 건강과 복지, 나아가 반려인의 행복과 비반려인의 공존을 위해 설립된 기술기반 펫케어 스타트업입니다.`,
         office: `Health and Medicine Corp.`,
-        date: `Oct 12, 2020 ~ `,
+        date: `2020-10-12 ~ `,
         contents: [
           {
             title: "실시간 라이브 강의 웨비나 개발",

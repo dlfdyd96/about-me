@@ -1,5 +1,5 @@
 <template>
-  <div class="my-5 mx-2 sm:m-10">
+  <div class="my-5 sm:mx-2 sm:m-10">
     <div class="text-4xl font-black px-4 pb-4">황일용</div>
     <div class="grid gap-6 p-4">
       <!-- 간단한 자기소개 (문단으로) -->

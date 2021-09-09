@@ -9,6 +9,7 @@
         <!-- </div>
         <div class="text-lg sm:text-xl font-bold mb-2">
           {{ item.office }} -->
+        <br class="sm:hidden" />
         <span class="ml-2 text-base sm:text-lg font-medium text-gray-500"
           >({{ item.date }})</span
         >
