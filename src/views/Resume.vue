@@ -9,6 +9,9 @@
       <!-- Work Experience -->
       <Experience :title="'Experience'" class="col-span-1" />
 
+      <!-- TODO: 개인 프로젝트? -->
+      <!-- TODO: Certificate -->
+
       <!-- Education -->
       <Education :title="'Education'" class="col-span-1" />
 
