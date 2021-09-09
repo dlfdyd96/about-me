@@ -3,13 +3,20 @@
     <div class="text-4xl font-black px-4 pb-4">황일용</div>
     <div class="grid gap-6 p-4">
       <!-- 간단한 자기소개 (문단으로) -->
-      <Intro class="col-span-1" />
+      <intro class="col-span-1" />
       <!-- 내 정보 (연락처, 개발 블로그, 사는곳, 전화번호, 현 직장) -->
-      <Detail class="col-span-1" />
+      <detail class="col-span-1" />
       <!-- Work Experience -->
-      <Experience :title="'Experience'" class="col-span-1" />
+
+      <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+        <experience :title="'Experience'" class="col-span-1" />
+        <activities :title="'Activities'" class="col-span-1" />
+      </div>
+
+      <!-- TODO: 개인 프로젝트? -->
 
       <!-- Education -->
+      <education :title="'Education'" class="col-span-1" />
 
       <!-- <DevelopSkills
         :title="'DevelopSkills'"
@@ -30,13 +37,14 @@ import Intro from "@/components/Resume/Intro.vue";
 import Detail from "@/components/Resume/Detail.vue";
 // import Awards from "@/components/Resume/Awards.vue";
 // import DevelopSkills from "@/components/Resume/DevelopSkills.vue";
-// import Education from "@/components/Resume/Education.vue";
+import Education from "@/components/Resume/Education.vue";
 import Experience from "@/components/Resume/Experience.vue";
+import Activities from "@/components/Resume/Activities.vue";
 // import Knowledges from "@/components/Resume/Knowledges.vue";
 
 export default defineComponent({
   name: "Resume",
-  components: { Intro, Detail, Experience },
+  components: { Intro, Detail, Experience, Education, Activities },
   // components: { Awards, DevelopSkills, Education, Experience, Knowledges },
 });
 </script>

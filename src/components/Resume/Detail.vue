@@ -1,6 +1,6 @@
 <template>
   <div class="text-base md:text-lg lg:text-xl">
-    <div class="grid grid-cols-1 lg:grid-cols-2 p-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 py-4">
       <div class="mb-2" v-for="(value, key) in myInfo" :key="key">
         <div class="grid grid-cols-3">
           <div class="col-span-1">
