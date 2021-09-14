@@ -11,16 +11,17 @@
       />
       <div
         class="
+          mx-4
           absolute
           inset-0
           text-white
-          flex
+          flex flex-col
           items-center
           justify-center
-          text-2xl
         "
       >
-        {{ title }}
+        <div class="text-5xl sm:text-2xl mb-7 text-center">{{ title }}</div>
+        <div class="text-xl sm:text-sm">{{ date }}</div>
       </div>
     </router-link>
   </div>
@@ -33,6 +34,7 @@ export default defineComponent({
   props: {
     id: Number,
     image: String,
+    date: String,
     title: String,
   },
 });

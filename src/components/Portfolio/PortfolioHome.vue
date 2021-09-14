@@ -3,7 +3,12 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4">
       <div v-for="(item, index) in items" :key="index">
         <!-- {{ index }} -->
-        <Thumbnail :image="item.image" :title="item.title" :id="index" />
+        <Thumbnail
+          :image="item.image"
+          :title="item.title"
+          :date="item.date"
+          :id="index"
+        />
       </div>
     </div>
   </div>

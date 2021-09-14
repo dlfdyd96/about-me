@@ -17,22 +17,22 @@
             >({{ item.date }})</span
           >
         </div>
-        <div>
+        <div class="mb-3 sm:mb-5">
           {{ item.description }}
         </div>
         <!-- Project -->
-        <div class="text-xl sm:text-2xl font-black mb-2 sm:mb-3 mt-4 sm:mt-6">
+        <!-- <div class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 mt-4 sm:mt-6">
           Project
-        </div>
+        </div> -->
         <div
           class="mb-6"
           v-for="(contentItem, contentsIndex) in item.contents"
           :key="contentsIndex"
         >
-          <div class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">
-            {{ contentsIndex + 1 }}. {{ contentItem.title }}
+          <div class="text-md sm:text-lg font-bold mb-1 sm:mb-2">
+            Project {{ contentsIndex + 1 }}. {{ contentItem.title }}
             <br class="sm:hidden" />
-            <span class="ml-2 text-base sm:text-lg font-medium text-gray-500"
+            <span class="ml-2 text-base sm:text-md font-medium text-gray-500"
               >({{ contentItem.date }})</span
             >
           </div>
@@ -132,6 +132,7 @@ export default defineComponent({
             ],
           },
           {
+            // TODO: OAuth에서 정확히 무엇을 하였는지 보여주자.
             title: "OAuth 2.0 API 인증 서버 개발",
             description: [
               `핼스엔메디슨 OAuth 2.0 API 인증 서버 개발`,
@@ -159,7 +160,7 @@ export default defineComponent({
           },
 
           {
-            title: "Devops - Microsoft Azure",
+            title: "Devops",
             description: [
               `Microsoft Azure를 사용한 서비스 Infra 구축 및 유지보수`,
               `Elastic Search를 통한 error tracking`,

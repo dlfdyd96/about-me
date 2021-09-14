@@ -5,10 +5,9 @@
 ## Category
 
 - Home
-- About me
 - Resume
 - Portfolio
-- Contact
+- Read Book
 
 <hr>
 
@@ -19,34 +18,56 @@
   - [tailwind Carousel](https://devdojo.com/tnylea/creating-a-slider-with-tailwind-css)
 - [x] 날짜, 시간
 
-## # About Me
-
-- [x] 간략한 자기소개 & 영어로도
-- [x] 나이, 지역, 주소, 이메일, 폰?, 현재 직업
-- [x] What I Do
-  - Server Developer
-  - Front End Developer
-  - Azure Infra
-  - Career Goal
-- [ ] Recent News
-
 ## # Resume
 
-- [x] Education
-  - [x] Time Line
-- [x] Develop Skills
+- [x] 간단한 자기소개
+  - [ ] 피드백: 좀 더 전문스럽게 3줄 정도로 수정할 것.
+- [x] Detail
+  - [ ] velog 블로그 추가
 - [x] Experience
-- [x] Knowledges
-  - skill stack (badge)
-- [ ] Project
+- [x] Activities
+- [x] Education
 
 ## # Portfolio
 
-- [x] Weedle Academy
-- [ ] NestJS Community
-- [ ] ...
+- [ ] Weedle
+  - [ ] image
+  - [ ] 1page: 자신의 기술 스펙 요약
+  - [ ] 2page: 프로젝트 요약
+- [ ] Weedle Academy
+  - [ ] image
+  - [ ] 1page: 자신의 기술 스펙 요약
+  - [ ] 2page: 프로젝트 요약
+- [ ] Hnmcorp OAuth2.0 API Server
+  - [ ] image
+  - [ ] 1page: 자신의 기술 스펙 요약
+  - [ ] 2page: 프로젝트 요약
+- [ ] 알고리즘 동아리 첼린지 사이트
+  - [ ] image
+  - [ ] 1page: 자신의 기술 스펙 요약
+  - [ ] 2page: 프로젝트 요약
+- [ ] 임베디드 소프트웨어 경진대회
+  - [ ] image
+  - [ ] 1page: 자신의 기술 스펙 요약
+  - [ ] 2page: 프로젝트 요약
+- [ ] 제 17회 대경권 알고리즘 경진 경진대회
+  - [ ] image
+  - [ ] 1page: 자신의 기술 스펙 요약
+  - [ ] 2page: 프로젝트 요약
+  <!-- - [ ] NestJS Community -->
 
-## # Contact
+## # Read Book
 
-- [ ] email
-- diplicated
+TODO: 읽은 책들을 정리할 예정입니다.
+
+- [ ] `/views/ReadBook.vue`
+- [ ] Component
+  - [ ] 책
+  ```ts
+  export interface BookItem {
+    image: string; // 책 이미지
+    title: string; // 책 제목
+    link: string; // github 로 연결
+    date: string; // 책 읽은 날짜? 흠..
+  }
+  ```
