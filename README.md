@@ -54,6 +54,10 @@
   - [ ] image
   - [ ] 1page: 자신의 기술 스펙 요약
   - [ ] 2page: 프로젝트 요약
+- [ ] 명예옷장
+  - [ ] image
+  - [ ] 1page: 자신의 기술 스펙 요약
+  - [ ] 2page: 프로젝트 요약
   <!-- - [ ] NestJS Community -->
 
 ## # Read Book
