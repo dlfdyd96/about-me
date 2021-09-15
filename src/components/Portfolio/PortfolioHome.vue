@@ -6,6 +6,7 @@
         <Thumbnail
           :image="item.image"
           :title="item.title"
+          :thumbnail="item.thumbnail"
           :date="item.date"
           :id="index"
         />

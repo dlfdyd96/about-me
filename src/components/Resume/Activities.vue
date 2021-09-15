@@ -47,9 +47,10 @@ export default defineComponent({
       title: "Trainning",
       items: [
         {
-          title: `Programmers Dev Course : 클라우드 기반 백엔드 엔지니어링`,
+          title: `Programmers Dev Course`,
           date: `2015-07-30 ~ 교육 참여 중`,
           contents: [
+            "클라우드 기반 백엔드 엔지니어링",
             "Java Spring Framework, Cloud (AWS) 교육",
             "코드 리뷰, TIL 블로그 포스팅, 기술 세미나 발표 등 참여",
           ],

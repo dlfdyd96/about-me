@@ -1,11 +1,19 @@
 <template>
-  <div class="relative">
+  <div class="relative w-full h-full">
     <!-- <a/> -->
     <router-link :to="{ name: 'PortFolioDetail', params: { id } }">
       <img
-        class="rounded-xl bg-center b-no-repeat bg-auto"
+        class="
+          object-cover object-center
+          w-full
+          h-full
+          rounded-xl
+          bg-center
+          b-no-repeat
+          bg-auto
+        "
         ref="pic"
-        :src="require(`@/assets/portfolio/${image}`)"
+        :src="require(`@/assets/portfolio/${thumbnail}`)"
         :style="{ filter: `brightness(40%)` }"
         alt="dd"
       />
@@ -33,6 +41,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   props: {
     id: Number,
+    thumbnail: String,
     image: String,
     date: String,
     title: String,

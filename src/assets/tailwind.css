@@ -12,7 +12,7 @@
     @apply text-xl font-semibold;
   }
   h3 {
-    @apply text-lg font-semibold;
+    @apply text-lg font-medium;
   }
   ul {
     @apply list-disc ml-5;

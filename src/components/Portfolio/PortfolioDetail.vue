@@ -7,18 +7,35 @@
         flex
         items-center
         justify-center
-        pb-10
+        pb-4
       "
     >
       <span class="text-6xl p-4">[</span>
       {{ currentItem.title }}
       <span class="text-6xl p-4">]</span>
     </div>
+    <div
+      class="
+        text-xl text-center
+        content-center
+        flex
+        items-center
+        justify-center
+        pb-7
+        text-gray-500
+      "
+    >
+      <span> ( {{ currentItem.date }} )</span>
+    </div>
     <div class="flex justify-center">
       <img
-        class="object-cover object-center w-full max-w-screen-sm max-h-60 pb-10"
+        class="object-cover object-center w-full max-w-screen-sm pb-10"
         ref="pic"
-        :src="require(`@/assets/portfolio/${currentItem.image}`)"
+        :src="
+          require(`@/assets/portfolio/${
+            currentItem.image ? currentItem.image : currentItem.thumbnail
+          }`)
+        "
         :style="{ filter: `brightness(80%)` }"
         alt="dd"
       />
@@ -64,7 +81,6 @@ export default defineComponent({
       changedText = changedText.replaceAll("&lt;", "<");
       changedText = changedText.replaceAll("&gt;", ">");
       changedText = changedText.replaceAll("&quot;", '"');
-      console.log(changedText);
       return changedText;
     });
 
