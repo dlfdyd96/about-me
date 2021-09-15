@@ -31,34 +31,13 @@
 ## # Portfolio
 
 - [ ] Weedle
-  - [ ] image
-  - [ ] 1page: 자신의 기술 스펙 요약
-  - [ ] 2page: 프로젝트 요약
 - [ ] Weedle Academy
-  - [ ] image
-  - [ ] 1page: 자신의 기술 스펙 요약
-  - [ ] 2page: 프로젝트 요약
 - [ ] Hnmcorp OAuth2.0 API Server
-  - [ ] image
-  - [ ] 1page: 자신의 기술 스펙 요약
-  - [ ] 2page: 프로젝트 요약
 - [ ] 알고리즘 동아리 첼린지 사이트
-  - [ ] image
-  - [ ] 1page: 자신의 기술 스펙 요약
-  - [ ] 2page: 프로젝트 요약
 - [ ] 임베디드 소프트웨어 경진대회
-  - [ ] image
-  - [ ] 1page: 자신의 기술 스펙 요약
-  - [ ] 2page: 프로젝트 요약
 - [ ] 제 17회 대경권 알고리즘 경진 경진대회
-  - [ ] image
-  - [ ] 1page: 자신의 기술 스펙 요약
-  - [ ] 2page: 프로젝트 요약
 - [ ] 명예옷장
-  - [ ] image
-  - [ ] 1page: 자신의 기술 스펙 요약
-  - [ ] 2page: 프로젝트 요약
-  <!-- - [ ] NestJS Community -->
+<!-- - [ ] NestJS Community -->
 
 ## # Read Book
 
