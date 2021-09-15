@@ -18,9 +18,18 @@ export default createStore<RootState>({
         image: "test5.jpeg",
         date: "2020-11 ~ 2021-04",
         contents: `
-          안녕하세요
-          <p>
-          다음줄입니다.
+# gdgd
+## gdgd
+### gdgd
+gdgd
+- d
+- d 
+1. d
+2. f
+2. dd
+
+<hr>
+
         `,
       },
       {
