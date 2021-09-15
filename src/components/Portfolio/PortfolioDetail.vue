@@ -25,7 +25,7 @@
     </div>
     <div class="flex justify-center">
       <div
-        v-html="currentItem.contents"
+        v-html="changeMarkdown"
         class="w-full max-w-screen-sm break-words"
       ></div>
     </div>
@@ -33,8 +33,10 @@
 </template>
 
 <script lang="ts">
+import { Renderer, setOptions, parse } from "marked";
+
 import { PortfolioI, RootState } from "@/store";
-import { defineComponent, ref } from "vue";
+import { computed, defineComponent, ref } from "vue";
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
 
@@ -46,11 +48,29 @@ export default defineComponent({
     const index: number = +route.params["id"];
 
     const currentItem = ref<PortfolioI>(state.portFolioItems[index]);
-    console.log(currentItem);
 
-    return { currentItem };
+    const changeMarkdown = computed(() => {
+      setOptions({
+        renderer: new Renderer(),
+        gfm: true,
+        headerIds: false,
+        breaks: true,
+        pedantic: false,
+        sanitize: true,
+        smartLists: true,
+        smartypants: false,
+      });
+      let changedText: string = parse(currentItem.value.contents);
+      changedText = changedText.replaceAll("&lt;", "<");
+      changedText = changedText.replaceAll("&gt;", ">");
+      changedText = changedText.replaceAll("&quot;", '"');
+      console.log(changedText);
+      return changedText;
+    });
+
+    return { currentItem, changeMarkdown };
   },
 });
 </script>
 
-<style></style>
+<style scoped></style>
