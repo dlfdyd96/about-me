@@ -5,6 +5,9 @@ import Resume from "../views/Resume.vue";
 import Portfolio from "../views/Portfolio.vue";
 import PortfolioDetail from "../components/Portfolio/PortfolioDetail.vue";
 import PortfolioHome from "../components/Portfolio/PortfolioHome.vue";
+import Book from "../views/Book.vue";
+import BookDetail from "../components/Book/BookDetail.vue";
+import BookHome from "../components/Book/BookHome.vue";
 // import Contact from "../views/Contact.vue";
 
 const routes: Array<RouteRecordRaw> = [
@@ -52,6 +55,25 @@ const routes: Array<RouteRecordRaw> = [
         path: ":id",
         name: "PortFolioDetail",
         component: PortfolioDetail,
+      },
+    ],
+  },
+  {
+    path: "/books",
+    component: Book,
+    children: [
+      {
+        path: "",
+        name: "Book",
+        component: BookHome,
+        meta: {
+          isPage: true,
+        },
+      },
+      {
+        path: ":id",
+        name: "BookDetail",
+        component: BookDetail,
       },
     ],
   },

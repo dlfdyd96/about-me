@@ -1,5 +1,12 @@
 import { createStore } from "vuex";
 
+export interface BookI {
+  thumbnail: string;
+  image: string;
+  title: string;
+  date: string;
+  contents: string;
+}
 export interface PortfolioI {
   thumbnail: string;
   image: string;
@@ -9,6 +16,7 @@ export interface PortfolioI {
 }
 export interface RootState {
   portFolioItems: PortfolioI[];
+  bookItems: BookI[];
 }
 
 export default createStore<RootState>({
@@ -191,11 +199,44 @@ React.js와 Vue.js 가 가장 인기 있는 웹 프론트엔드 프레임워크�
         `,
       },
     ],
+    bookItems: [
+      {
+        contents: "test contest",
+        date: new Date().toISOString(),
+        title: "hi",
+        image: "test2.jpeg",
+        thumbnail: "test1.jpeg",
+      },
+      {
+        contents: "test contest",
+        date: new Date().toISOString(),
+        title: "hi",
+        image: "test2.jpeg",
+        thumbnail: "test1.jpeg",
+      },
+      {
+        contents: "test contest",
+        date: new Date().toISOString(),
+        title: "hi",
+        image: "test2.jpeg",
+        thumbnail: "test1.jpeg",
+      },
+      {
+        contents: "test contest",
+        date: new Date().toISOString(),
+        title: "hi",
+        image: "test2.jpeg",
+        thumbnail: "test1.jpeg",
+      },
+    ],
   },
   mutations: {
     findPortfolioById(state: RootState, index: number) {
       // console.log(state.portFolioItems[index]);
       return state.portFolioItems[index];
+    },
+    findBookById(state: RootState, index: number) {
+      return state.bookItems[index];
     },
   },
   actions: {},

@@ -23,7 +23,7 @@
 - [x] 간단한 자기소개
   - [ ] 피드백: 좀 더 전문스럽게 3줄 정도로 수정할 것.
 - [x] Detail
-  - [ ] velog 블로그 추가
+  - [x] velog 블로그 추가
 - [x] Experience
 - [x] Activities
 - [x] Education
@@ -43,14 +43,7 @@
 
 TODO: 읽은 책들을 정리할 예정입니다.
 
-- [ ] `/views/ReadBook.vue`
+- [x] `/views/ReadBook.vue`
 - [ ] Component
-  - [ ] 책
-  ```ts
-  export interface BookItem {
-    image: string; // 책 이미지
-    title: string; // 책 제목
-    link: string; // github 로 연결
-    date: string; // 책 읽은 날짜? 흠..
-  }
-  ```
+  - [ ] Thumbnail
+  - [ ] Detail
