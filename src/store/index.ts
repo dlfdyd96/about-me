@@ -140,7 +140,7 @@ NestJS의 Dynamic Module 기능을 이용하여 서비스에 맞는 모듈을 �
       // // },
       {
         title: "명예 옷장",
-        thumbnail: "hornor/thumbnail.jpeg",
+        thumbnail: "hornor/thumbnail.jpg",
         image: "hornor/main.png",
         date: "2018-09 ~ 2018-12",
         contents: `
