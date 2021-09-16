@@ -2,7 +2,6 @@ import { createStore } from "vuex";
 
 export interface BookI {
   thumbnail: string;
-  image: string;
   title: string;
   date: string;
   link: string;
@@ -201,33 +200,29 @@ React.js와 Vue.js 가 가장 인기 있는 웹 프론트엔드 프레임워크�
     ],
     bookItems: [
       {
-        link: "https://github.com/dlfdyd96",
+        link: "https://github.com/dlfdyd96", // TODO:
         date: "2020-11 ~ 2021-04",
         title: "자바 객채 지향의 원리와 이해",
-        image: "test2.jpeg",
-        thumbnail: "test1.jpeg",
+        thumbnail: "java-object-oriented.png",
       },
       {
-        link: "https://github.com/dlfdyd96",
-        date: "2020-11 ~ 2021-04",
+        link: "https://github.com/dlfdyd96/be-G-book-real-world-software-development-study",
+        date: "2021-08 ~ 2021-09",
         title: "실전 자바 소프트웨어 개발",
-        image: "test2.jpeg",
-        thumbnail: "test2.jpeg",
+        thumbnail: "real-world-software-development.jpg",
       },
       {
-        link: "https://github.com/dlfdyd96",
-        date: "2020-11 ~ 2021-04",
+        link: "https://github.com/prgrms-web-devcourse/be-G-DB-SQL-study", // TODO:
+        date: "2021-08 ~ 2021-09",
         title: "SQL 레벨업",
-        image: "test2.jpeg",
-        thumbnail: "test3.jpeg",
+        thumbnail: "sql-levelup.jpg",
       },
-      {
-        link: "https://github.com/dlfdyd96",
-        date: "2020-11 ~ 2021-04",
-        title: "Node.js 디자인 패턴",
-        image: "test2.jpeg",
-        thumbnail: "test4.jpeg",
-      },
+      // {
+      //   link: "https://github.com/dlfdyd96",
+      //   date: "2020-11 ~ 2021-04",
+      //   title: "Node.js 디자인 패턴",
+      //   thumbnail: "test4.jpeg",
+      // },
     ],
   },
   mutations: {

@@ -12,7 +12,7 @@
           bg-auto
         "
         ref="pic"
-        :src="require(`@/assets/${thumbnail}`)"
+        :src="require(`@/assets/book/${thumbnail}`)"
         alt="dd"
       />
       <div class="ml-1">
