@@ -17,7 +17,7 @@
           :title="item.title"
           :thumbnail="item.thumbnail"
           :date="item.date"
-          :id="index"
+          :link="item.link"
         />
       </div>
     </div>

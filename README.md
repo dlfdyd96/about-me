@@ -31,19 +31,19 @@
 ## # Portfolio
 
 - [ ] Weedle
-- [ ] Weedle Academy
+- [x] Weedle Academy
 - [ ] Hnmcorp OAuth2.0 API Server
 - [ ] 알고리즘 동아리 첼린지 사이트
 - [ ] 임베디드 소프트웨어 경진대회
-- [ ] 제 17회 대경권 알고리즘 경진 경진대회
-- [ ] 명예옷장
+- [x] 명예옷장
 <!-- - [ ] NestJS Community -->
 
 ## # Read Book
 
-TODO: 읽은 책들을 정리할 예정입니다.
+읽은 책들을 나열
 
 - [x] `/views/ReadBook.vue`
-- [ ] Component
-  - [ ] Thumbnail
-  - [ ] Detail
+- [x] Component
+  - [x] Home
+  - [x] Thumbnail
+- [ ] Contents

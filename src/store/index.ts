@@ -5,7 +5,7 @@ export interface BookI {
   image: string;
   title: string;
   date: string;
-  contents: string;
+  link: string;
 }
 export interface PortfolioI {
   thumbnail: string;
@@ -201,32 +201,32 @@ React.js와 Vue.js 가 가장 인기 있는 웹 프론트엔드 프레임워크�
     ],
     bookItems: [
       {
-        contents: "test contest",
-        date: new Date().toISOString(),
-        title: "hi",
+        link: "https://github.com/dlfdyd96",
+        date: "2020-11 ~ 2021-04",
+        title: "자바 객채 지향의 원리와 이해",
         image: "test2.jpeg",
         thumbnail: "test1.jpeg",
       },
       {
-        contents: "test contest",
-        date: new Date().toISOString(),
-        title: "hi",
+        link: "https://github.com/dlfdyd96",
+        date: "2020-11 ~ 2021-04",
+        title: "실전 자바 소프트웨어 개발",
         image: "test2.jpeg",
-        thumbnail: "test1.jpeg",
+        thumbnail: "test2.jpeg",
       },
       {
-        contents: "test contest",
-        date: new Date().toISOString(),
-        title: "hi",
+        link: "https://github.com/dlfdyd96",
+        date: "2020-11 ~ 2021-04",
+        title: "SQL 레벨업",
         image: "test2.jpeg",
-        thumbnail: "test1.jpeg",
+        thumbnail: "test3.jpeg",
       },
       {
-        contents: "test contest",
-        date: new Date().toISOString(),
-        title: "hi",
+        link: "https://github.com/dlfdyd96",
+        date: "2020-11 ~ 2021-04",
+        title: "Node.js 디자인 패턴",
         image: "test2.jpeg",
-        thumbnail: "test1.jpeg",
+        thumbnail: "test4.jpeg",
       },
     ],
   },
