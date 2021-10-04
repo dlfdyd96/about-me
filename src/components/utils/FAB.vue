@@ -2,10 +2,16 @@
   <div>
     <div class="fixed bottom-5 right-5">
       <div>
-        <button class="m-1 p-4 hover:text-green-500" @click="previousPage">
+        <button
+          class="m-1 p-4 mr-0 hover:text-white bg-green-500 rounded-l-full"
+          @click="previousPage"
+        >
           <i class="fas fa-less-than"></i>
         </button>
-        <button class="m-1 p-4 hover:text-green-500" @click="nextPage">
+        <button
+          class="m-1 p-4 ml-0 hover:text-white bg-green-500 rounded-r-full"
+          @click="nextPage"
+        >
           <i class="fas fa-greater-than"></i>
         </button>
       </div>

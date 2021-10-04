@@ -111,7 +111,7 @@ export default defineComponent({
         title: `Software Engineer - BackEnd Developer`,
         description: `헬스앤메디슨은 반려동물의 건강과 복지, 나아가 반려인의 행복과 비반려인의 공존을 위해 설립된 기술기반 펫케어 스타트업입니다.`,
         office: `Health and Medicine Corp.`,
-        date: `2020-10-12 ~ `,
+        date: `2020-10-12 ~ 2021-09-30`,
         contents: [
           {
             title: "실시간 라이브 강의 웨비나 개발",
@@ -149,7 +149,7 @@ export default defineComponent({
               `공지사항 팝업 API 서비스 개발`,
               `리워드 상품 배송에 대한 Fassto 물류 서비스 API 연동 개발`,
             ],
-            date: "2021-04 ~ ",
+            date: "2021-04 ~ 2021-09",
             skills: [
               "NestJS",
               "TypeScript",
@@ -168,7 +168,7 @@ export default defineComponent({
               `Azure Media Service 를 통한 실시간 스트리밍 서비스 운영`,
               `MS Azure Certificate AZ-900 취득 (2021-05)`,
             ],
-            date: "2020-10 ~ ",
+            date: "2020-10 ~ 2021-09",
             skills: [
               "Azure",
               "Docker",

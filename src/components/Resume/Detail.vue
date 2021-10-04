@@ -125,8 +125,7 @@ export default defineComponent({
         icon: `fas fa-building`,
         items: [
           {
-            description: `Health And Medicine Corp.`,
-            href: "https://hnmcorp.kr/",
+            description: `-`,
           },
         ],
       },
