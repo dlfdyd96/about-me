@@ -1,5 +1,11 @@
 import { createStore } from "vuex";
 
+export interface BookI {
+  thumbnail: string;
+  title: string;
+  date: string;
+  link: string;
+}
 export interface PortfolioI {
   thumbnail: string;
   image: string;
@@ -9,6 +15,7 @@ export interface PortfolioI {
 }
 export interface RootState {
   portFolioItems: PortfolioI[];
+  bookItems: BookI[];
 }
 
 export default createStore<RootState>({
@@ -132,7 +139,7 @@ NestJS의 Dynamic Module 기능을 이용하여 서비스에 맞는 모듈을 �
       // // },
       {
         title: "명예 옷장",
-        thumbnail: "hornor/thumbnail.jpeg",
+        thumbnail: "hornor/thumbnail.jpg",
         image: "hornor/main.png",
         date: "2018-09 ~ 2018-12",
         contents: `
@@ -191,11 +198,40 @@ React.js와 Vue.js 가 가장 인기 있는 웹 프론트엔드 프레임워크�
         `,
       },
     ],
+    bookItems: [
+      {
+        link: "https://github.com/dlfdyd96/introduction-to-spring",
+        date: "2021-09 ~ Reading ",
+        title: "자바 객채 지향의 원리와 이해",
+        thumbnail: "java-object-oriented.png",
+      },
+      {
+        link: "https://github.com/dlfdyd96/be-G-book-real-world-software-development-study",
+        date: "2021-08 ~ 2021-09",
+        title: "실전 자바 소프트웨어 개발",
+        thumbnail: "real-world-software-development.jpg",
+      },
+      {
+        link: "https://github.com/prgrms-web-devcourse/be-G-DB-SQL-study", // TODO:
+        date: "2021-08 ~ 2021-09",
+        title: "SQL 레벨업",
+        thumbnail: "sql-levelup.jpg",
+      },
+      // {
+      //   link: "https://github.com/dlfdyd96",
+      //   date: "2020-11 ~ 2021-04",
+      //   title: "Node.js 디자인 패턴",
+      //   thumbnail: "test4.jpeg",
+      // },
+    ],
   },
   mutations: {
     findPortfolioById(state: RootState, index: number) {
       // console.log(state.portFolioItems[index]);
       return state.portFolioItems[index];
+    },
+    findBookById(state: RootState, index: number) {
+      return state.bookItems[index];
     },
   },
   actions: {},
