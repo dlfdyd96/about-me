@@ -200,7 +200,7 @@ React.js와 Vue.js 가 가장 인기 있는 웹 프론트엔드 프레임워크�
     ],
     bookItems: [
       {
-        link: "https://github.com/dlfdyd96/introduction-to-spring",
+        link: "https://github.com/dlfdyd96/Be-Victory-Team-Book-Study",
         date: "2021-09 ~ Reading ",
         title: "자바 객채 지향의 원리와 이해",
         thumbnail: "java-object-oriented.png",
