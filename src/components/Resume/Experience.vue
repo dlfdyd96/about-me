@@ -108,6 +108,12 @@ export default defineComponent({
   setup() {
     const items = ref<ExperienceItem[]>([
       {
+        title: `Backend Software Engineer - 제품 팀`,
+        description: `Backend core engineer.\nmaintaing multimedia service and developing phone call service`,
+        office: `Channel Corp.`,
+        data: `2022-01-03 ~ now`
+      },
+      {
         title: `Software Engineer - BackEnd Developer`,
         description: `헬스앤메디슨은 반려동물의 건강과 복지, 나아가 반려인의 행복과 비반려인의 공존을 위해 설립된 기술기반 펫케어 스타트업입니다.`,
         office: `Health and Medicine Corp.`,
